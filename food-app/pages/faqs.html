@@ -1,0 +1,137 @@
+<div class="flex h-screen bg-gray-100">
+    <!-- Navigation Drawer (same as other pages) -->
+    <div class="w-64 bg-white shadow-md">
+        <div class="p-4 border-b border-gray-200">
+            <img src="../assets/logo.png" alt="FoodExpress Logo" class="w-16 h-16 mx-auto mb-2">
+            <div class="text-center font-medium text-gray-700" id="userName">John Doe</div>
+        </div>
+        <nav class="mt-4">
+            <a href="/home" data-link class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50">
+                <i class="fas fa-home mr-3"></i>
+                Home
+            </a>
+            <a href="/profile" data-link class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50">
+                <i class="fas fa-user mr-3"></i>
+                My Profile
+            </a>
+            <a href="/favorites" data-link class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50">
+                <i class="fas fa-heart mr-3"></i>
+                Favorites
+            </a>
+            <a href="/order-history" data-link class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50">
+                <i class="fas fa-history mr-3"></i>
+                Order History
+            </a>
+            <a href="/faqs" data-link class="flex items-center px-4 py-3 text-gray-700 bg-blue-50 border-l-4 border-blue-500">
+                <i class="fas fa-question-circle mr-3"></i>
+                FAQs
+            </a>
+            <a href="/logout" data-link class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50">
+                <i class="fas fa-sign-out-alt mr-3"></i>
+                Logout
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 overflow-y-auto">
+        <div class="p-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h1>
+            
+            <!-- FAQ Sections -->
+            <div class="space-y-6">
+                <!-- Ordering Section -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Ordering</h2>
+                    <div class="space-y-4">
+                        <div class="faq-item">
+                            <button class="faq-question flex justify-between items-center w-full text-left p-3 bg-gray-50 rounded-lg hover:bg-gray-100">
+                                <span>How do I place an order?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer hidden p-4 text-gray-600">
+                                <p>To place an order, browse restaurants, select items, and proceed to checkout. You can pay online or choose cash on delivery.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question flex justify-between items-center w-full text-left p-3 bg-gray-50 rounded-lg hover:bg-gray-100">
+                                <span>Can I modify my order after placing it?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer hidden p-4 text-gray-600">
+                                <p>You can modify your order within 5 minutes of placing it. After that, please contact customer support for assistance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Delivery Section -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Delivery</h2>
+                    <div class="space-y-4">
+                        <div class="faq-item">
+                            <button class="faq-question flex justify-between items-center w-full text-left p-3 bg-gray-50 rounded-lg hover:bg-gray-100">
+                                <span>What are the delivery hours?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer hidden p-4 text-gray-600">
+                                <p>Delivery hours vary by restaurant. Most restaurants deliver from 10 AM to 10 PM daily.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question flex justify-between items-center w-full text-left p-3 bg-gray-50 rounded-lg hover:bg-gray-100">
+                                <span>How can I track my order?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer hidden p-4 text-gray-600">
+                                <p>You can track your order in real-time from the Order History section of the app.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Payments Section -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Payments</h2>
+                    <div class="space-y-4">
+                        <div class="faq-item">
+                            <button class="faq-question flex justify-between items-center w-full text-left p-3 bg-gray-50 rounded-lg hover:bg-gray-100">
+                                <span>What payment methods do you accept?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer hidden p-4 text-gray-600">
+                                <p>We accept credit/debit cards, PayPal, and cash on delivery.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question flex justify-between items-center w-full text-left p-3 bg-gray-50 rounded-lg hover:bg-gray-100">
+                                <span>Is my payment information secure?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer hidden p-4 text-gray-600">
+                                <p>Yes, we use industry-standard encryption to protect your payment information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Support -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Need More Help?</h2>
+                    <p class="text-gray-600 mb-4">If you didn't find the answer to your question, please contact our support team.</p>
+                    <div class="flex space-x-4">
+                        <a href="tel:+18005551234" class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                            <i class="fas fa-phone mr-2"></i> Call Support
+                        </a>
+                        <a href="mailto:support@foodexpress.com" class="flex items-center px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300">
+                            <i class="fas fa-envelope mr-2"></i> Email Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
