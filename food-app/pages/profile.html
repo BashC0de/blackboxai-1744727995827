@@ -1,0 +1,87 @@
+<div class="flex h-screen bg-gray-100">
+    <!-- Navigation Drawer (same as other pages) -->
+    <div class="w-64 bg-white shadow-md">
+        <div class="p-4 border-b border-gray-200">
+            <img src="../assets/logo.png" alt="FoodExpress Logo" class="w-16 h-16 mx-auto mb-2">
+            <div class="text-center font-medium text-gray-700" id="userName">John Doe</div>
+        </div>
+        <nav class="mt-4">
+            <a href="/home" data-link class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50">
+                <i class="fas fa-home mr-3"></i>
+                Home
+            </a>
+            <a href="/profile" data-link class="flex items-center px-4 py-3 text-gray-700 bg-blue-50 border-l-4 border-blue-500">
+                <i class="fas fa-user mr-3"></i>
+                My Profile
+            </a>
+            <a href="/favorites" data-link class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50">
+                <i class="fas fa-heart mr-3"></i>
+                Favorites
+            </a>
+            <a href="/order-history" data-link class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50">
+                <i class="fas fa-history mr-3"></i>
+                Order History
+            </a>
+            <a href="/faqs" data-link class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50">
+                <i class="fas fa-question-circle mr-3"></i>
+                FAQs
+            </a>
+            <a href="/logout" data-link class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50">
+                <i class="fas fa-sign-out-alt mr-3"></i>
+                Logout
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 overflow-y-auto">
+        <div class="p-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-6">My Profile</h1>
+            
+            <!-- Profile Card -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 mb-6">
+                <div class="flex flex-col md:flex-row items-start md:items-center mb-6">
+                    <div class="w-24 h-24 rounded-full bg-gray-200 flex items-center justify-center mb-4 md:mb-0 md:mr-6">
+                        <i class="fas fa-user text-3xl text-gray-400"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h2 id="profileName" class="text-xl font-bold text-gray-800 mb-1">John Doe</h2>
+                        <p id="profileMobile" class="text-gray-600 mb-2">+1 (555) 123-4567</p>
+                        <p id="profileEmail" class="text-gray-600">john.doe@example.com</p>
+                    </div>
+                    <button id="editProfileBtn" class="px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 mt-4 md:mt-0">
+                        <i class="fas fa-edit mr-2"></i>Edit Profile
+                    </button>
+                </div>
+                
+                <!-- Address Section -->
+                <div class="border-t border-gray-200 pt-4">
+                    <h3 class="font-bold text-gray-800 mb-3">Delivery Address</h3>
+                    <p id="profileAddress" class="text-gray-600 mb-4">123 Main Street, Apt 4B, New York, NY 10001</p>
+                    <button id="editAddressBtn" class="px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-edit mr-2"></i>Edit Address
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Account Settings -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Account Settings</h2>
+                
+                <div class="space-y-4">
+                    <button id="changePasswordBtn" class="w-full text-left p-3 bg-gray-50 rounded-lg hover:bg-gray-100">
+                        <i class="fas fa-lock mr-3"></i>Change Password
+                    </button>
+                    
+                    <button id="notificationSettingsBtn" class="w-full text-left p-3 bg-gray-50 rounded-lg hover:bg-gray-100">
+                        <i class="fas fa-bell mr-3"></i>Notification Settings
+                    </button>
+                    
+                    <button id="deleteAccountBtn" class="w-full text-left p-3 bg-red-50 text-red-600 rounded-lg hover:bg-red-100">
+                        <i class="fas fa-trash-alt mr-3"></i>Delete Account
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
